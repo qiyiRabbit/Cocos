@@ -9,7 +9,7 @@ function HttpScene:onCreate()
 
     -- local xhr = cc.XMLHttpRequest:new()
     -- xhr.responseType = cc.XMLHTTPREQUEST_RESPONSE_STRING
-    -- xhr:open("GET", "http://192.168.16.113:8080/get")
+    -- xhr:open("GET", "http://127.0.0.1:8080/get")
 
     -- local function onReadyStateChanged()
     --     if xhr.readyState == 4 and (xhr.status >= 200 and xhr.status < 207) then
