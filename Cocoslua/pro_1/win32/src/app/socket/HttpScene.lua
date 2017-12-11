@@ -60,7 +60,7 @@ function HttpScene:XMLHttpRequestLayer()
         local function onMenuGetClicked()
             local xhr = cc.XMLHttpRequest:new()
             xhr.responseType = cc.XMLHTTPREQUEST_RESPONSE_STRING
-            xhr:open("GET", "http://192.168.16.113:8080/get")
+            xhr:open("GET", "http://127.0.0.1:8080/get")
 
             local function onReadyStateChanged()
                 if xhr.readyState == 4 and (xhr.status >= 200 and xhr.status < 207) then
@@ -93,7 +93,7 @@ function HttpScene:XMLHttpRequestLayer()
         local function onMenuPostClicked()
             local xhr = cc.XMLHttpRequest:new()
             xhr.responseType = cc.XMLHTTPREQUEST_RESPONSE_STRING
-            xhr:open("POST", "http://192.168.16.113:8080/post")
+            xhr:open("POST", "http://127.0.0.1:8080/post")
             local function onReadyStateChanged()
                 if xhr.readyState == 4 and (xhr.status >= 200 and xhr.status < 207) then
                     if not tolua.isnull(labelStatusCode) then
@@ -124,7 +124,7 @@ function HttpScene:XMLHttpRequestLayer()
         local function onMenuPostBinaryClicked()
             local xhr = cc.XMLHttpRequest:new()
             xhr.responseType = cc.XMLHTTPREQUEST_RESPONSE_ARRAY_BUFFER
-            xhr:open("POST", "http://192.168.16.113:8080/post")
+            xhr:open("POST", "http://127.0.0.1:8080/post")
 
             local function onReadyStateChanged()
                 if xhr.readyState == 4 and (xhr.status >= 200 and xhr.status < 207) then
@@ -171,7 +171,7 @@ function HttpScene:XMLHttpRequestLayer()
         local function onMenuPostJsonClicked()
             local xhr = cc.XMLHttpRequest:new()
             xhr.responseType = cc.XMLHTTPREQUEST_RESPONSE_JSON
-            xhr:open("POST", "http://192.168.16.113:8080/post")
+            xhr:open("POST", "http://127.0.0.1:8080/post")
 
             local function onReadyStateChanged()
                 if xhr.readyState == 4 and (xhr.status >= 200 and xhr.status < 207) then

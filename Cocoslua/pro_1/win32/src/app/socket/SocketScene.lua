@@ -8,7 +8,7 @@ function SocketScene:onCreate()
     -- luaSocket:settimeout(1)
     -- luaSocket:settimeout(1)
 
-    local  HOST = '192.168.16.113';
+    local  HOST = '127.0.0.1';
     local  PORT = 6080;
 
     
